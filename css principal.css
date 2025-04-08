@@ -35,7 +35,7 @@ body {
 /*Header y navegación */
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: right;
     padding: 20px 0;
     position: relative;
     z-index: 10;
@@ -45,6 +45,7 @@ header {
     display: flex;
     list-style: none;
     gap: 10px;
+    position: ;
 }
 
 .nav-item {
@@ -80,7 +81,7 @@ header {
     height: 100%;
     background-color: rgba(126, 34, 206, 0.2);
     border-radius: 6px;
-    filter: blur(15px);
+    filter: blur(30px);
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
@@ -123,4 +124,5 @@ body::before {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
 
