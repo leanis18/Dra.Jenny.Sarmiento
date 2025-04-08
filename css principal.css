@@ -67,7 +67,7 @@ header {
    /*Efecto hover */
    .nav-link:hover {
     color: white;
-    background-color: rgba(126, 34, 206, 0.8); /* Color púrpura */
+    background-color: #6E3C60; 
 }
 
 /*Efecto blur en hover */
