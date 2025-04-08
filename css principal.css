@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Mifuente';
+    src: url(font/Mifuente.woff) format('woff');
+    src: url(font/Mifuente.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Estilos generales */
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(./img/inicio.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*Contenedor principal*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*Header y navegación*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+   /*Efecto hover */
+   .nav-link:hover {
+    color: white;
+    background-color: rgba(126, 34, 206, 0.8); /* Color púrpura */
+}
+
+/*Efecto blur en hover */
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 34, 206, 0.2);
+    border-radius: 6px;
+    filter: blur(15px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
