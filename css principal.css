@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
-    font-family: 'Mifuente';
-    src: url(font/Mifuente.woff) format('woff');
-    src: url(font/Mifuente.woff2) format('woff2');
+    font-family: 'Montserrat';
+    src: url(font/Montserrat.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 
-/* Estilos generales */
+/*Estilos generales */
   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
 }
 
 body {
@@ -25,7 +24,7 @@ body {
     position: relative;
 }
 
-/*Contenedor principal*/
+/*Contenedor principal */
 .container {
     width: 100%;
     max-width: 1200px;
@@ -33,7 +32,7 @@ body {
     padding: 20px;
 }
 
-/*Header y navegación*/
+/*Header y navegación */
 header {
     display: flex;
     justify-content: flex-end;
@@ -64,10 +63,11 @@ header {
     position: relative;
     z-index: 1;
 }
-   /*Efecto hover */
-   .nav-link:hover {
+
+/*Efecto hover */
+.nav-link:hover {
     color: white;
-    background-color: #6E3C60; 
+    background-color: #6E3C60;
 }
 
 /*Efecto blur en hover */
@@ -84,15 +84,43 @@ header {
     opacity: 0;
     transition: opacity 0.3s ease;
     z-index: -1;
+    border-radius: 5px;
 }
 
-{
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.3);
-            z-index: 1;
-        }
+.nav-link:hover::before {
+    opacity: 1;
+}
+
+
+
+/*Contenido */
+.content {
+    margin-top: 100px;
+    max-width: 600px;
+    color: white;
+    position: relative;
+    z-index: 5;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Overlay para oscurecer ligeramente la imagen de fondo */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
