@@ -6,8 +6,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #ffffff; 
-    color: #0a1a33; 
+    background-color: #ffffff; /* fondo muy claro */
+    color: #0a1a33; /* azul oscuro para texto */
   }
   
 
@@ -16,7 +16,7 @@ body {
 
   .header {
     background-color: #ffffff; /* Blanco */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /*sombra sutil*/
+    box-shadow: 0 2px 10px rgba(47, 47, 49, 0.05); /* sombra sutil */
     padding: 1rem 2rem;
     position: sticky;
     top: 0;
@@ -29,7 +29,7 @@ body {
     align-items: center;
     padding-left: 5rem;
     padding-right: 5rem;
-    max-width: none; /*usar todo el ancho*/
+    max-width: none; /*usar todo el ancho */
     margin: 0;
   }
   
@@ -44,24 +44,24 @@ body {
   
   .nav {
     display: flex;
-    justify-content: center; /*Centra el menú*/
-    gap: 2rem; /*Espacio entre los enlace */
+    justify-content: center; /* Centra el menú */
+    gap: 2rem; /* Espacio entre los enlaces */
     padding: 1rem 0;
-    background-color: white; 
+    background-color: white; /* O el color que uses */
     align-items: center;
   }
   
   .nav a {
     color: #1d2d50; 
-    text-decoration: none; /*Quita el subrayado*/
-    font-family: 'Qartella', sans-serif; 
+    text-decoration: none; /* Quita el subrayado */
+    font-family: 'Qartella', sans-serif; /* Si ya cargaste esa fuente */
     font-size: 1rem;
     font-weight: 500;
     transition: color 0.3s;
   }
   
   .nav a:hover {
-    color: #489fd8; /* Color al pasar el mouse*/
+    color: #489fd8; /* Color al pasar el mouse, por ejemplo */
   }
 
  
@@ -119,6 +119,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    margin-top: 50px;
   }
   
   .btn-ver:hover {
@@ -145,7 +146,7 @@ body {
 }
 
 .btn-contacto:hover {
-  background-color: #0a1a33; /*Un tono más oscuro al pasar el mouse*/
+  background-color: #0a1a33; /* Un tono más oscuro al pasar el mouse */
   color: white;
 }
 
@@ -153,52 +154,203 @@ body {
 /*nosotros*/
 
 .contenedor-nosotros {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 2rem;
-  }
-  
-  .bloque-imagen {
-    flex: 1 1 300px;
-    display: flex;
-    justify-content:flex-start;
-  }
-  
-  .fondo-cuadro {
-    background-color: #1a2a4f; 
-    padding: 2rem;
-    border-radius: 50px;
-  }
-  
-  .foto-doctora {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-radius: 50px;
-  }
+  display: flex;
+  align-items: center; 
+  padding: 80px 5rem;
+  gap: 3rem; /*spacio entre recuadro y texto */
+}
 
-  /*texto que acompaña la foto*/
+.contenedor-superpuesto {
+  position: relative;
+  width: 300px;
+  height: 700px;
+}
+
+.recuadro {
+  position: absolute;
+  top: 0;
+  left: 70;
+  width: 300px;
+  height: 700px;
+  background-color: #1a2a4f;
+  border-radius: 150px;
+  z-index: 1;
+}
+
+.foto {
+  position: absolute;
+  top: 0;
+  left: 100px; /* mueve un poco hacia la derecha si quieres el efecto de solapamiento */
+  width: 300px;
+  height: 700px;
+  border-radius: 150px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.foto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /*Ajusta la imagen para que llene sin deformarse*/
+  border-radius: 0; 
+}
+
+/*texto que acompaña la foto*/
   
   .texto-nosotros {
-    flex: 1 1 400px;
+    flex: 1 1 100px;
     color: #2b2b2b;
     font-family: 'Qartella', sans-serif;
+    padding-top: 1px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15rem;
+    padding-right: 2rem;
   }
-  
   .texto-nosotros h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #1a2a4f;
+    color: #1a2a4f;   
   }
   
   .texto-nosotros p {
     font-size: 18px;
-    line-height: 1.6; /* Espaciado entre líneas */
+    line-height: 1.6; /*Espaciado entre líneas*/
     color: #333;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
   }
+
+
+  /*testimonios*/
+
+  .contenedor-testimonios {
+    display: flex;
+    align-items: center; 
+    padding: 80px 5rem;
+    background-color: #1a2a4f;
+    justify-content: right;
+
+  }
+
+  .texto-testimonios {
+    justify-content: right;
+  }
+
+  .texto-testimonios h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #48a9e6;   
+  }
+  
+  .texto-testimonios p {
+    font-size: 18px;
+    line-height: 1.6; /*Espaciado entre líneas*/
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+
+  /*slider*/
+
+  .contenedor-slider {
+    width: 100%;
+    height: 100vh;
+    background: none no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .slider-images {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+  }
+
+  .slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+
+  .slider-img {
+    width: 110px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition:  0.7s ease;
+  }
+
+  .slider-images .slider-img:first-child, .slider-images .slider-img:last-child{
+    height: 480px;
+  }
+  .slider-images .slider-img:nth-child(2), .slider-images .slider-img:nth-child(6){
+    height: 665px;
+  }
+  .slider-images .slider-img:nth-child(3), .slider-images .slider-img:nth-child(4), .slider-images .slider-img:nth-child(5){
+    height: 665px;
+  }
+
+  #h1 {
+    font-family:'Qartella', sans-serif;
+    font-family: 40px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: rotate(270deg);
+    transition:  0.7s ease;
+
+  }
+
+  .detalles {
+    position: absolute;
+    bottom: 43px;
+    left: 43px;
+  }
+
+  .detalles h2 {
+    font-family:'Qartella', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 44px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+  }
+
+  .detalles p {
+    font-family: "Jost", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 33px;
+    text-align: left;
+    color: #fff;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+    display: none;
+  }
+  .slider-img.active {
+    width: 766px !important;
+    height: 750px !important;
+  }
+  .slider-img.active h1 {
+     display: none;
+  }
+  .slider-img.active .detalles p, .slider-img.active .detalles h2{
+    display: block;
+  }
+
+
 
 
