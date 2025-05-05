@@ -35,25 +35,107 @@
     </div>
   </section>
 
-
-  
-  <section class="nosotros" id="nosotros">
-    <div class="contenedor-nosotros">
-      <div class="bloque-imagen">
-        <div class="fondo-cuadro">
-        <img src="img/Jenny.jpeg" alt="Foto de la Doctora Jenny Sarmiento" class="foto-doctora">
-      </div>
+ <section class="contenedor-nosotros">
+  <div class="contenedor-superpuesto">
+    <div class="recuadro"></div>
+    <div class="foto">
+      <img src="img/jenny 2.jpg" alt="Foto Jenny" />
     </div>
-      <div class="texto-nosotros">
+  </div>  
+    <div class="texto-nosotros">
         <h2>Sobre la Dra. Jenny Sarmiento</h2>
         <p>Especialista en medicina estética y micropigmentación, la Dra. Jenny combina ciencia y arte para realzar la belleza natural.</p>
-        <p>Con años de experiencia, su pasión es ayudar a cada paciente a sentirse seguro y radiante, ofreciendo tratamientos personalizados con profesionalismo y calidez.</p>
-      
+        <p>Con años de experiencia, su pasión es ayudar a cada paciente a sentirse seguro y radiante, ofreciendo tratamientos personalizados con profesionalismo y calidez.</p> 
         <a href="nosotros.html" class="btn-ver">Conócenos</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contenedor-testimonios">
+    <div class="texto-testimonios">
+      <h2>Testimonios</h2>
+      <p>Conoce Algunos de Nuestros Testimonios</p>
+    </div>
+
+  </section>
+
+  <section class="contenedor-slider">
+    <div class="slider-images">
+
+      <div class="slider-img">
+        <img src="img/1.jpg" alt="1" />
+        <h1 id="h1">Monica</h1>
+        <div class="detalles">
+          <h2>Monica Hernandez</h2>
+          <p>Yo me hice...</p>
+        </div>
+      </div>
+
+      <div class="slider-img">
+        <img src="img/1.jpg" alt="2" />
+        <h1 id="h1">Simon</h1>
+        <div class="detalles">
+          <h2>Simon Cubillos</h2>
+          <p>Yo me hice...</p>
+        </div>
+      </div>
+
+      <div class="slider-img">
+        <img src="img/1.jpg" alt="3" />
+        <h1 id="h1">Samanta</h1>
+        <div class="detalles">
+          <h2>Samanta Benitez</h2>
+          <p>Yo me hice...</p>
+        </div>
+      </div>
+
+      <div class="slider-img active">
+        <img src="img/1.jpg" alt="4" />
+        <h1 id="h1">Monica</h1>
+        <div class="detalles">
+          <h2>Monica Hernandez</h2>
+          <p>Yo me hice...</p>
+        </div>
+      </div>
+      
+      <div class="slider-img">
+        <img src="img/1.jpg" alt="5" />
+        <h1 id="h1">Monica</h1>
+        <div class="detalles">
+          <h2>Monica Hernandez</h2>
+          <p>Yo me hice...</p>
+        </div>
+      </div>
+
+      <div class="slider-img">
+        <img src="img/1.jpg" alt="6" />
+        <h1 id="h1">Monica</h1>
+        <div class="detalles">
+          <h2>Monica Hernandez</h2>
+          <p>Yo me hice...</p>
+        </div>
+      </div>
+
+      <div class="slider-img">
+        <img src="img/1.jpg" alt="6" />
+        <h1 id="h1">Monica</h1>
+        <div class="detalles">
+          <h2>Monica Hernandez</h2>
+          <p>Yo me hice...</p>
+        </div>
       </div>
 
     </div>
   </section>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      $(".slider-img").on("click", function () {
+        $(".slider-img").removeClass("active");
+        $(this).addClass("active");
+      });
+    });
+  </script>
 </body>
 </html>
+
