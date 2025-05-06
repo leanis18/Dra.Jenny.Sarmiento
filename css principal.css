@@ -11,7 +11,11 @@ body {
   }
   
 
- 
+ html {
+  scroll-behavior: smooth;
+ }
+
+
   /*header*/
 
   .header {
@@ -74,7 +78,7 @@ body {
     display: flex;
     align-items: center;
     justify-content:flex-start;
-    text-align: center;
+    text-align: left;
     color: white;
     position: relative;
   }
@@ -158,6 +162,7 @@ body {
   align-items: center; 
   padding: 80px 5rem;
   gap: 3rem; /*spacio entre recuadro y texto */
+  padding: 10rem 3rem 10rem;
 }
 
 .contenedor-superpuesto {
@@ -202,7 +207,7 @@ body {
     color: #2b2b2b;
     font-family: 'Qartella', sans-serif;
     padding-top: 1px;
-    display: block;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     padding-left: 15rem;
@@ -367,6 +372,8 @@ body {
   width: 100%;
   z-index: 1;
 }
+
+
 
 
 
