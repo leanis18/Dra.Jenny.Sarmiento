@@ -374,3 +374,102 @@ body {
 
 
     
+@media (max-width: 1200px) {
+  .contenedor {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .contenedor-nosotros {
+    gap: 2rem;
+    padding: 60px 2rem;
+  }
+
+  .texto-nosotros {
+    padding-left: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .contenedor {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contenedor-nosotros {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .texto-nosotros {
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .contenedor-superpuesto {
+    margin-bottom: 2rem;
+  }
+
+  .contenedor-testimonios {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .slider-images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenido-hero h1 {
+    font-size: 2rem;
+  }
+
+  .contenido-hero p {
+    font-size: 1rem;
+  }
+
+  .btn-ver, .btn-contacto {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .slider-img.active {
+    width: 90vw !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    height: 60px;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contenedor-superpuesto {
+    width: 250px;
+    height: 500px;
+  }
+
+  .recuadro, .foto {
+    width: 250px;
+    height: 500px;
+  }
+
+  .texto-nosotros h2,
+  .texto-testimonios h2 {
+    font-size: 22px;
+  }
+
+  .texto-nosotros p,
+  .texto-testimonios p {
+    font-size: 16px;
+  }
+}
