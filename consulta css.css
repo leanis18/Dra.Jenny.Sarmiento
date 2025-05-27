@@ -62,6 +62,25 @@ body {
   color: #489fd8; 
 }
 
+ /*boton ver mas*/
+  
+  .btn-ver {
+    background-color: #48a9e6;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+  }
+  
+  .btn-ver:hover {
+    background-color: #1c7ec5;
+  }
+
+
   /*boton contacto*/
 
   .btn-contacto {
@@ -125,4 +144,90 @@ body {
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
+
+  .consulta {
+  padding: 3rem 1.5rem;
+  background-color: #f9fbfd;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #1c2b4d;
+}
+
+.consulta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #1c2b4d;
+}
+
+.consulta p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #445;
+}
+
+.consulta-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.consulta-form input,
+.consulta-form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+.consulta-form input {
+  flex: 1 1 220px;
+}
+
+.consulta-form button {
+  background-color: #1c2b4d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.consulta-form button:hover {
+  background-color: #284a7c;
+}
+ 
+.footer {
+  background-color: #0a1d3a;
+  color: white;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  max-height: 60px;
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
   
