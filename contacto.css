@@ -1,0 +1,174 @@
+body {
+    font-family: 'Qartella', sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff; /* fondo muy claro */
+    color: #0a1a33; /* azul oscuro para texto */
+  }
+  
+
+ 
+  /*header*/
+
+  .header {
+    background-color: #ffffff; /* Blanco */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* sombra sutil */
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    max-width: none; /*usar todo el ancho */
+    margin: 0;
+  }
+  
+  .logo {
+    height: 80px;
+    justify-content: flex-start;
+  }
+
+ 
+ 
+  /*nav*/
+  
+  .nav {
+    display: flex;
+    justify-content: center; /* Centra el menú */
+    gap: 2rem; /* Espacio entre los enlaces */
+    padding: 1rem 0;
+    background-color: white; /* O el color que uses */
+    align-items: center;
+  }
+  
+  .nav a {
+    color: #1d2d50; /* Cambia el azul por tu color de marca */
+    text-decoration: none; /* Quita el subrayado */
+    font-family: 'Qartella', sans-serif; /* Si ya cargaste esa fuente */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #489fd8; /* Color al pasar el mouse, por ejemplo */
+  }
+
+    /*boton contacto*/
+
+    .btn-contacto {
+        background-color: #48a9e6;
+        color: white;
+        padding: 0.5rem 0.5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+        transition: background-color 0.3s ease;
+    }
+    
+    .btn-contacto:hover {
+      background-color: #0a1a33; /* Un tono más oscuro al pasar el mouse */
+      color: white;
+    }
+    
+    .contacto {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  font-family: 'Qartella', sans-serif;
+}
+
+.contacto h2 {
+  text-align: center;
+  color: #1a2a4f;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  flex: 1 1 220px;
+}
+
+.formulario-contacto textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  background-color: #1a2a4f;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #1c7ec5;
+}
+
+.mapa h3 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+
+.footer {
+  background-color: #0a1d3a;
+  color: white;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer-logo img {
+  max-height: 60px;
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
