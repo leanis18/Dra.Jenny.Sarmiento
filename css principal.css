@@ -316,10 +316,23 @@ body {
 
   }
 
+  .slider-img.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(10, 26, 51, 0.8), transparent);
+  border-radius: 180px / 180px; /* Mantiene la forma ovalada */
+  z-index: 1;
+}
+
   .detalles {
     position: absolute;
     bottom: 43px;
     left: 43px;
+    z-index: 2;
   }
 
   .detalles h2 {
@@ -329,7 +342,7 @@ body {
     text-align: left;
     line-height: 44px;
     text-align: left;
-    color: #fff;
+    color: #ffffff;
     text-transform: uppercase;
     transition: 0.7s ease;
     display: none;
@@ -337,16 +350,25 @@ body {
 
   .detalles p {
     font-family: 'Qartella', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     text-align: left;
     line-height: 33px;
     text-align: left;
     color: #fff;
-    text-transform: uppercase;
     transition: 0.7s ease;
     display: none;
   }
+
+  .slider-img.active .detalles {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  text-align: right;
+  width: auto;
+  max-width: 80%;
+  z-index: 2;
+}
   .slider-img.active {
     width: 550px!important;
     height: 850px !important;
@@ -362,29 +384,30 @@ body {
 
 .contenedor-complemento {
   display: flex;
-  align-items: center;
+  align-items: stretch; 
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 5rem auto;
-  gap: 2rem;
-  position: relative;
-  padding: 2rem 3rem 2rem;
+  padding-left: 5%;
+  padding-right: 0; 
+  gap: 40px;
 }
 
 #img-mujer {
   width: 50%;
   height: auto;
   object-fit: cover;
-  clip-path: inset(0 0 0 50%); /* Recorta la mitad izquierda si deseas ese efecto */
+  clip-path: inset(0 0 0 50%); 
   z-index: 1;
+  margin: 0;
+  padding: 0;
+  align-self: stretch;
 }
 
 .texto-complemento {
   flex: 1;
-  z-index: 2;
-  position: relative;
   font-family: 'Qartella', sans-serif;
   color: #2b2b2b;
+  max-width: 50%;
+  padding-top: 250px;
 }
 
 .texto-complemento h2 {
@@ -400,6 +423,33 @@ body {
   margin-bottom: 30px;
 }
 
+/*contenedor servicios*/
+
+.contenedor-servicios {
+  display: flex;
+  align-items: center; 
+  padding: 20px 5rem;
+  background-color: #48a9e6;
+  justify-content: right;
+
+}
+
+.texto-algunos {
+  justify-content: right;
+}
+
+.texto-algunos h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0a1a33;   
+}
+
+.texto-algunos p {
+  font-size: 18px;
+  line-height: 1.6; /*Espaciado entre líneas*/
+  color: #ffffff;
+  margin-bottom: 30px;
+}
 /*servicios*/ 
 
 .servicios {
@@ -427,7 +477,7 @@ body {
 .tarjeta-servicio img {
   width: 100%;
   height: auto;
-  border-radius: 0.75rem;
+  border-radius: 200px;
   margin-bottom: 1rem;
 }
 
@@ -466,34 +516,52 @@ body {
   background-color: #2b2b2b;
 }
 
+.btn-servicio {
+  background-color: #1a2a4f;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
 
-/*contenedor como*/
+.btn-servicio:hover {
+  background-color: #1c7ec5;
+}
 
-.contenedor-como {
+
+.footer {
+  background-color: #0a1d3a;
+  color: white;
+  padding: 2rem 1rem 1rem;
+  font-size: 0.95rem;
+}
+
+.footer-contenido {
   display: flex;
-  align-items: center; 
-  padding: 20px 5rem;
-  background-color: #48a9e6;
-  justify-content: left;
-
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
 }
 
-
-.texto-como {
-  justify-content: left;
+.footer-logo img {
+  max-height: 60px;
 }
 
-.texto-como h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-  color: #0a1a33;   
+.footer-info p {
+  margin: 0.3rem 0;
 }
 
-.texto-como p {
-  font-size: 18px;
-  line-height: 1.6; /*Espaciado entre líneas*/
-  color: #ffffff;
-  margin-bottom: 30px;
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  opacity: 0.8;
 }
 
 
